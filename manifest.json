@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-scenario-planner",
-  "version": "1.0.0",
-  "description": "Financial Scenario Planner — Model financial scenarios, stress test assumptions, project P&L under different conditions",
+  "version": "1.0.1",
+  "description": "Financial Scenario Planner \u2014 Model financial scenarios, stress test assumptions, project P&L under different conditions",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,10 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-scenario-planner",
   "homepage": "https://cortexprism.io/marketplace/plugins/scenario-planner",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "scenario_model", "description": "Build financial scenario model", "params": [] },
-    { "name": "scenario_stress_test", "description": "Stress test assumptions", "params": [] },
+    {
+      "name": "scenario_model",
+      "description": "Build financial scenario model",
+      "params": []
+    },
+    {
+      "name": "scenario_stress_test",
+      "description": "Stress test assumptions",
+      "params": []
+    },
     {
       "name": "scenario_compare",
       "description": "Compare multiple scenarios side by side",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
